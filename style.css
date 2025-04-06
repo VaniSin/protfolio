@@ -1,64 +1,72 @@
-/* General Styles */
+/* Apply Google Font */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f1f1;
-    color: #333;
-    text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  color: #1c1c1c;
 }
 
-/* Header */
+/* Header Styling */
 header {
-    background: #ffcad4;
-    padding: 20px;
-    color: #fff;
-}
-.quote {
-    font-size: 1.2em;
-    font-weight: bold;
-    font-style: italic;
+  background-color: #1c1c1c;
+  color: #f7f7f7;
+  padding: 1.2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* Navigation */
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 1.5rem;
 }
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+
 nav ul li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+  color: #f7f7f7;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-/* Sections */
+nav ul li a:hover {
+  color: #00b894;
+}
+
+/* Section Styling */
 section {
-    padding: 20px;
-    margin: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
-/* Profile Picture */
-.profile-pic {
-    width: 150px;
-    border-radius: 50%;
-    margin-top: 10px;
+/* Buttons */
+button, .btn {
+  background-color: #8a2be2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-/* Footer */
-footer {
-    background: #ffcad4;
-    padding: 15px;
-    color: white;
-    position: relative;
+button:hover, .btn:hover {
+  background-color: #00b894;
 }
-.signature {
-    width: 120px;
-    margin-top: 10px;
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Card or Box Styling (for project or certs) */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
