@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1f1;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #ffcad4;
+    padding: 20px;
+    color: #fff;
+}
+.quote {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #ffcad4;
+    padding: 15px;
+    color: white;
+    position: relative;
+}
+.signature {
+    width: 120px;
+    margin-top: 10px;
+}
