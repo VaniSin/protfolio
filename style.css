@@ -1,72 +1,121 @@
-/* Apply Google Font */
+/* Font & Base */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+:root {
+  --bg-light: #f7f7f7;
+  --bg-dark: #1c1c1c;
+  --primary: #8a2be2;
+  --accent: #00b894;
+  --text-dark: #1c1c1c;
+  --text-light: #ffffff;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f7f7f7;
-  margin: 0;
-  color: #1c1c1c;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
 }
 
-/* Header Styling */
+/* HEADER */
 header {
-  background-color: #1c1c1c;
-  color: #f7f7f7;
-  padding: 1.2rem 0;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  color: var(--text-light);
+  padding: 2rem 1rem;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow);
 }
 
-/* Navigation */
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* NAVIGATION */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding: 0;
-  gap: 1.5rem;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
-nav ul li a {
-  color: #f7f7f7;
+nav a {
   text-decoration: none;
+  color: var(--text-light);
   font-weight: 500;
+  transition: 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: #00b894;
+nav a:hover {
+  color: #f1f1f1;
+  text-decoration: underline;
 }
 
-/* Section Styling */
+/* SECTION STYLING */
 section {
   padding: 3rem 2rem;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
-/* Buttons */
-button, .btn {
-  background-color: #8a2be2;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-button:hover, .btn:hover {
-  background-color: #00b894;
-}
-
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Card or Box Styling (for project or certs) */
-.card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  padding: 2rem;
+/* SECTION HEADINGS */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary);
   margin-bottom: 2rem;
+}
+
+/* CARD STYLE (for projects/certs etc) */
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 30px;
+  background-color: var(--primary);
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
 }
