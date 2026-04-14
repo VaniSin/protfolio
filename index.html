@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vani Singh | Frontend Developer & Data Science Enthusiast</title>
+    <!-- Modern Font: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="blob-bg"></div>
+    <div class="blob-bg blob-2"></div>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">VS</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero section-padding reveal">
+            <div class="hero-content">
+                <span class="badge">Hello, World!</span>
+                <h1 class="hero-title">I'm <span class="highlight">Vani Singh</span></h1>
+                <h2 class="hero-subtitle">Aspiring Software Engineer | Data Science Enthusiast | Frontend Developer</h2>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="image-border">
+                    <img src="hhh.jpeg" alt="Vani Singh" class="hero-image"
+                        onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2787&auto=format&fit=crop';">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-padding reveal">
+            <div class="container section-inner">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="lead">Passionate coder and data science enthusiast.</p>
+                        <p>I am a B.Tech Computer Science student specializing in Data Science with a strong passion for
+                            building impactful digital solutions through Data Analytics, AI, and Web Development. I
+                            enjoy solving real-world problems using data-driven approaches and developing intuitive web
+                            applications. My experience includes creating healthcare-based platforms, analytical
+                            dashboards, and AI-integrated projects that combine technical expertise with practical
+                            innovation.</p>
+
+                        <div class="hobbies">
+                            <h3><i class="ph ph-sparkle"></i> Hobbies & Interests</h3>
+                            <ul>
+                                <li>Exploring emerging technologies in AI, Data Science, and Web Development</li>
+                                <li>Building and experimenting with coding projects & tech prototypes</li>
+                                <li>Participating in hackathons and technical competitions</li>
+                                <li>Continuous learning through online courses and tech communities</li>
+                                <li>Designing creative UI/UX layouts and portfolio websites</li>
+                                <li>Watching educational content on technology and business analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section-padding reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="project-tag">AI / Healthcare</span>
+                            <h3>Niramay – Ayurvedic Symptom Checker</h3>
+                            <p>
+                                Developed a healthcare-focused web platform that recommends Ayurvedic
+                                plant-based home remedies based on user-entered symptoms. Built a responsive
+                                frontend with dynamic user interaction and integrated backend logic for
+                                symptom-based remedy prediction.
+                            </p>
+                            <ul>
+                                <li>Designed structured remedy database for symptom mapping</li>
+                                <li>Implemented backend using Python & Django</li>
+                                <li>Planned ML integration for automated symptom prediction</li>
+                            </ul>
+                            <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Python, Django, MongoDB</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="project-tag">Data Analytics</span>
+                            <h3>Air Quality Index (AQI) Dashboard</h3>
+                            <p>
+                                Built an analytical dashboard to study pollution trends across major Indian
+                                cities using AQI datasets. Performed data cleaning, preprocessing, and
+                                visualization to identify pollution patterns and seasonal variations.
+                            </p>
+                            <ul>
+                                <li>Analysed PM2.5, PM10, NO₂, SO₂, CO, and O₃ datasets</li>
+                                <li>Created comparative visualizations for city-wise AQI trends</li>
+                                <li>Generated insights on seasonal pollution fluctuations</li>
+                            </ul>
+                            <p><strong>Tech Stack:</strong> Python, Pandas, NumPy, Power BI, Matplotlib</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="project-tag">Research / Ethics</span>
+                            <h3>Addiction & Dopamine Manipulation in Social Media</h3>
+                            <p>
+                                Conducted an in-depth analytical study on dopamine-driven engagement
+                                mechanisms used by social media platforms and their psychological impact
+                                on users.
+                            </p>
+                            <ul>
+                                <li>Studied infinite scroll & notification-based engagement systems</li>
+                                <li>Analysed ethical concerns of recommendation algorithms</li>
+                                <li>Evaluated mental health implications of addictive UX design</li>
+                            </ul>
+                            <p><strong>Focus:</strong> Digital Ethics, Algorithmic Behaviour, Human Psychology</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section-padding reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Core Skills</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-items">
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">C++</span>
+                            <span class="skill-pill">Java (Basic)</span>
+                            <span class="skill-pill">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <div class="skill-items">
+                            <span class="skill-pill">HTML</span>
+                            <span class="skill-pill">CSS</span>
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">Django</span>
+                            <span class="skill-pill">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data & Analytics</h3>
+                        <div class="skill-items">
+                            <span class="skill-pill">NumPy</span>
+                            <span class="skill-pill">Pandas</span>
+                            <span class="skill-pill">Power BI</span>
+                            <span class="skill-pill">Data Analysis</span>
+                            <span class="skill-pill">Data Visualization</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Databases & Tracking</h3>
+                        <div class="skill-items">
+                            <span class="skill-pill">MongoDB</span>
+                            <span class="skill-pill">SQL</span>
+                            <span class="skill-pill">Atlassian Jira</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skill-items">
+                            <span class="skill-pill">Git</span>
+                            <span class="skill-pill">GitHub</span>
+                            <span class="skill-pill">VS Code</span>
+                            <span class="skill-pill">Jupyter Notebook</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <div class="skill-items">
+                            <span class="skill-pill">Problem Solving</span>
+                            <span class="skill-pill">Analytical Thinking</span>
+                            <span class="skill-pill">Team Collaboration</span>
+                            <span class="skill-pill">Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-padding reveal">
+            <div class="container">
+                <div class="section-header center">
+                    <h2>Let's Connect</h2>
+                    <p class="subtitle">Feel free to reach out for collaborations or just a friendly chat.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:vanisingh057@gmail.com" class="contact-card">
+                        <i class="ph ph-envelope-simple"></i>
+                        <span>Personal Email</span>
+                    </a>
+                    <a href="mailto:E23CSEU2417@bennett.edu.in" class="contact-card">
+                        <i class="ph ph-graduation-cap"></i>
+                        <span>Office Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vani-singh-23576b279" target="_blank" class="contact-card">
+                        <i class="ph ph-linkedin-logo"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/a.v_0912/" target="_blank" class="contact-card">
+                        <i class="ph ph-instagram-logo"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="tel:+919670389772" class="contact-card">
+                        <i class="ph ph-phone"></i>
+                        <span>+91 9670389772</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2025 Vani Singh. All Rights Reserved.</p>
+            </div>
+            <img src="C:\Users\vanis\OneDrive\Desktop\Docs\Vani\Sign.jpg" alt="Signature" class="signature"
+                onerror="this.style.display='none';">
+        </div>
+    </footer>
+</body>
+
+</html>
